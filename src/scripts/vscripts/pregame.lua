@@ -3121,12 +3121,42 @@ function Pregame:checkForReady()
     local totalPlayers = self:getActivePlayers()
     local readyPlayers = 0
 
+    -- Is the host ready?
+    local hostReady = false
+
     for playerID,readyState in pairs(self.isReady) do
         -- Ensure the player is connected AND ready
-        if readyState == 1 and PlayerResource:GetConnectionState(playerID) == 2 then
-            readyPlayers = readyPlayers + 1
+        if readyState == 1 then
+        	if PlayerResource:GetConnectionState(playerID) == 2 then
+	            readyPlayers = readyPlayers + 1
+	        end
+        end
+
+        -- Host checking
+        local thePly = PlayerResource:GetPlayer(playerID)
+        if thePly and GameRules:PlayerHasCustomGameHostPrivileges(thePly) then
+        	if readyState == 1 or PlayerResource:GetConnectionState(playerID) ~= 2 then
+        		-- Host is ready
+        		hostReady = true
+        	end
         end
     end
+
+    -- Are we currently in the baning phase?
+    if self:getPhase() == constants.PHASE_BANNING then
+	    -- Check if host banning is enabled
+	    if self.optionStore['lodOptionBanningHostBanning'] == 1 and self.optionStore['lodOptionBanningMaxBans'] <= 0 and self.optionStore['lodOptionBanningMaxHeroBans'] <= 0 then
+	    	-- Is the host ready?
+	    	if hostReady then
+	    		-- Everyone is ready
+	    		readyPlayers = totalPlayers
+	    	else
+	    		-- Max banning time is 4x what it normally would be
+	    		-- This is done to prevent the host from preventing the game from progressing
+	    		maxTime = maxTime * 4
+	    	end
+	    end
+	end
 
     -- Is there at least one player that is ready?
     if readyPlayers > 0 then
