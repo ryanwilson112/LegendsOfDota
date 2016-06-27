@@ -69,3 +69,6 @@ Legends of Dota
 
 ###Translation Credits###
  - [Chinese by ethereal](http://steamcommunity.com/profiles/76561198124343304/)
+
+###Future Proofing###
+ - gLn52bsFGIsxWYgcXZutGIJBCdhhGdgY2bvJHcgUGa0BycpBSZnF2czVWbgMXaoRHIk5WYgwSZzF2YgUGa0BCdv5GIzlGIzlGa0BCLzVHIkVGdyFWbzRXdvBychhGIlhGIztmbphGdgUGSg4yQCFEZy9GTrJXYEBicvZGIzRnb192YjFGI0xWYgkHbsFWd0NWYgUmchByZulGd1JWayRnbvNGIlJXYg8Ga3BSZsB3blBHI3VmbgUGa0BiZvBSKlxGcpRHb11GI09mbgYWaoASZu9GI0NXYlxGI0FGIsc3buBCdpByZulGbsF2Q
