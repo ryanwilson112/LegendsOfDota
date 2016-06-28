@@ -833,6 +833,7 @@
 
     // Starfall
     "DOTA_Tooltip_ability_mirana_starfall_lod"                                          "Starstorm"
+    //"DOTA_Tooltip_ability_mirana_starfall_lod_Description"                              "Calls down a wave of meteors to damage nearby enemy units.\n\nUpgradable by Aghanim's Scepter."
     "DOTA_Tooltip_ability_mirana_starfall_lod_Description"                              "Calls down a wave of meteors to damage nearby enemy units. The closest enemy unit to Mirana in a %starfall_secondary_radius% radius will be struck a second time for 75%% of the damage.\n\nUpgradable by Aghanim's Scepter."
     "DOTA_Tooltip_ability_mirana_starfall_lod_Lore"                                     "The Goddess breaks the strata to empower her Princess in the time of need."
     "DOTA_Tooltip_ability_mirana_starfall_lod_Note0"                                    "Starstorm is not blocked by Linken's Sphere."
