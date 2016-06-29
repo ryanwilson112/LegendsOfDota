@@ -1504,35 +1504,15 @@ function OnSelectedRandomBuildChanged(table_name, key, data) {
 function OnGetDraftArray(table_name, key, data) {
     var draftID = data.draftID;
 
-    var myDraftID = 0;
-
     var playerID = Players.GetLocalPlayer();
     var myInfo = Game.GetPlayerInfo(playerID);
     var myTeamID = myInfo.player_team_id;
     var myTeamPlayers = Game.GetPlayerIDsOnTeam(myTeamID);
 
-    var maxPlayers = 24;
-    for(var i=0; i<maxPlayers; ++i) {
-        if(i == playerID) break;
+    var draftPlayers = data.draftPlayers;
 
-        var info = Game.GetPlayerInfo(i);
-
-        if(info != null && myTeamID == info.player_team_id) {
-            ++myDraftID;
-        }
-    }
-
-    // Ensure we don't get a weird value for draftID
-    myDraftID = myDraftID % 5;
-
-    // Are we playing single draft?
-    if(optionValueList['lodOptionCommonGamemode'] == 5) {
-        // DraftID is just our playerID
-        myDraftID = playerID;
-    }
-
-    // Is this data for us?
-    if(myDraftID != draftID) return;
+    // Does this player own it?
+    if(!draftPlayers[playerID]) return;
 
     var draftArray = data.draftArray;
     heroDraft = draftArray.heroDraft;
