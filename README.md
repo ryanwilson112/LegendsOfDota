@@ -74,8 +74,9 @@ Legends of Dota
  - Chances are you will forget (or not know) to change certain files, doing this will cause stat tracking issues within Legends of Dota
  - This mod has had over 2.5 years worth of work put into it. Taking the mod, making a few changes and then uploading it to the workshop is a complete dick move, especially so if you claim it as your own work
  - By uploading an alternate version of Legends of Dota without my permission, you are saying "I am a dick, and I do not respect you.", and as such, you have no place in the Legends of Dota community to begin with
- - The reason you would upload an alternate version of Legends of Dota to the workshop is that you want to take players away from this version of Legends of Dota, which is a dick move
+ - The reason you would upload an alternate version of Legends of Dota to the workshop is that you want people to play your version of Legends of Dota instead of the main version, taking players away from this version, which is a dick move due to the amount of work you've stolen
  - Please do not upload alternate versions of Legends of Dota to the workshop, if you have suggestions or feature requests, make your case in the Issues section, all suggestions will be discussed
+ - If you would like to upload an alternate version of Legends of Dota, please seek approval by creating an issue in the issues section. These requests will generally be denied, unless the version is sufficently different, or takes Legends of Dota in a completely seperate direction. Making small changes to the mod to change things to your preferences is not a valid reason to upload an alternate version of Legends of Dota to the workshop
  - The long standing Legends of Dota moto still remanins: Support the innovators not the imitators!
 
 ###Translation Credits###
