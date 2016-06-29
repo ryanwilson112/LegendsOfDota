@@ -69,10 +69,10 @@ Legends of Dota
 
 ###Can I upload a modified version of Legends of Dota to the workshop?###
  - I'd rather you didn't do this
- - Doing this will split the playerbase between the two version
+ - Doing this will split the playerbase between the two versions
  - It will create bug tracking issues, people might play the alt version and experience an issue that isn't in the main version, then assossiate that experience with the main Legends of Dota
  - Chances are you will forget (or not know) to change certain files, doing this will cause stat tracking issues within Legends of Dota
- - This mod has had over 2.5 years worth of work put into it, taking it, making a few changes and then uploading it to the workshop is a complete dick move, especially so if you claim it as your own work
+ - This mod has had over 2.5 years worth of work put into it. Taking the mod, making a few changes and then uploading it to the workshop is a complete dick move, especially so if you claim it as your own work
  - By uploading an alternate version of Legends of Dota without my permission, you are saying "I am a dick, and I do not respect you.", and as such, you have no place in the Legends of Dota community to begin with
  - The reason you would upload an alternate version of Legends of Dota to the workshop is that you want to take players away from this version of Legends of Dota, which is a dick move
  - Please do not upload alternate versions of Legends of Dota to the workshop, if you have suggestions or feature requests, make your case in the Issues section, all suggestions will be discussed
