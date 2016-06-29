@@ -2107,6 +2107,17 @@ function Pregame:buildDraftArrays()
         maxDraftArrays = 24
     end
 
+    local draftPlayers = {}
+    for playerID=0,24 do
+    	local draftID = self:getDraftID(playerID)
+
+    	if not draftPlayers[draftID] then
+    		draftPlayers[draftID] = {}
+    	end
+
+    	draftPlayers[draftID][playerID] = true
+    end
+
     for draftID = 0,(maxDraftArrays - 1) do
         -- Create store for data
         local draftData = {}
@@ -2149,7 +2160,7 @@ function Pregame:buildDraftArrays()
         draftData.abilityDraft = abilityDraft
 
         -- Network data
-        network:setDraftArray(draftID, draftData)
+        network:setDraftArray(draftID, draftData, draftPlayers[draftID] or {})
     end
 end
 
