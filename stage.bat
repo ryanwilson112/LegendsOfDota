@@ -73,3 +73,5 @@ mklink /D /J "dota\game\materials" "src\materials"
 ::mklink /H "dota\game\maps\dota_pvp.vpk" "maps\dota_pvp.vpk"
 ::mklink /H "dota\game\maps\dota_pvp_tiled.vpk" "maps\dota_pvp_tiled.vpk"
 
+:: Add license agreement
+mklink /H "dota\game\LICENSE" "LICENSE"
