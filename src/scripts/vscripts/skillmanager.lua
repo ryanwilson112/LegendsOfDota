@@ -25,7 +25,7 @@ end
 local heroListKV = LoadKeyValues('scripts/npc/npc_heroes.txt')
 
 -- A list of sub abilities needed to give out when we add an ability
-local subAbilities = LoadKeyValues('scripts/kv/abilityDeps.kv')
+local subAbilities = LoadKeyValues('scripts/kv/ability_deps.kv')
 
 -- List of units that we can precache
 local unitList = LoadKeyValues('scripts/npc/npc_units_custom.txt')
