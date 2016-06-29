@@ -90,11 +90,12 @@ function Network:setSelectedAllRandomBuild(playerID, selectedBuilds)
 end
 
 -- Sends a draft array
-function Network:setDraftArray(draftID, draftArray)
+function Network:setDraftArray(draftID, draftArray, draftPlayers)
     -- Push to everyone
     CustomNetTables:SetTableValue('draft_array', tostring(draftID), {
         draftID = draftID,
-        draftArray = draftArray
+        draftArray = draftArray,
+        draftPlayers = draftPlayers
     })
 end
 
