@@ -890,7 +890,15 @@
     "DOTA_Tooltip_modifier_slark_essence_shift_intellect_datadriven_buff_counter_Description"				"Stealing %dMODIFIER_PROPERTY_STATS_INTELLECT_BONUS% intelligence."
     "DOTA_Tooltip_modifier_slark_essence_shift_intellect_datadriven_debuff_counter"			"Essence Shift"
     "DOTA_Tooltip_modifier_slark_essence_shift_intellect_datadriven_debuff_counter_Description"	"Losing %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS% of each attribute."
-
+    //Backstab
+    "DOTA_Tooltip_ability_riki_backstab_lod" "Backstab" 
+    "DOTA_Tooltip_ability_riki_backstab_lod_Description" "If Riki attacks from behind, bonus damage is applied based on his current agility." 
+    "Dota_Tooltip_riki_backstab_lod_Lore" "The Stealth Assassin is not afraid to fight dirty, and specializes in attacking his opponents from behind" 
+    "DOTA_Tooltip_ability_riki_backstab_lod_Note0" "Illusions of Riki will play Backstab animations, but not deal any bonus damage" 
+    "DOTA_Tooltip_ability_riki_backstab_lod_Note1" "Bonus damage from Backstab cannot be evaded" 
+    "DOTA_Tooltip_ability_riki_backstab_lod_agility_damage" "%AGI DAMAGE MULT:" 
+    "DOTA_Tooltip_ability_riki_backstab_lod_backstab_angle" "BACKSTAB ANGLE:"
+    
     "DOTA_Tooltip_ability_death_prophet_witchcraft"                                 "Witchcraft"
     "DOTA_Tooltip_ability_death_prophet_witchcraft_Description"                     "Decreases the cooldowns of abilities by up to 4 seconds, a cooldown can not be lowered below 1 second. The Witchcraft cooldown reduction is applied before octarine core reduction."
     "DOTA_Tooltip_ability_death_prophet_witchcraft_Lore"                            "With each death, Krobelus adds necromantic power to her repertoire."
