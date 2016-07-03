@@ -21,7 +21,7 @@ function CheckBackstab(params)
 	resultAngle = math.abs(resultAngle)
 	
 	-- Check for the backstab angle.
-	if resultAngle >= (180 - (ability:GetSpecialValueFor("backstab_angle") / 2)) and result_angle <= (180 + (ability:GetSpecialValueFor("backstab_angle") / 2)) then 
+	if resultAngle >= (180 - (ability:GetSpecialValueFor("backstab_angle") / 2)) and resultAngle <= (180 + (ability:GetSpecialValueFor("backstab_angle") / 2)) then 
 		-- Play the sound on the victim.
 		EmitSoundOn(params.sound, params.target)
 		-- Create the back particle effect.
