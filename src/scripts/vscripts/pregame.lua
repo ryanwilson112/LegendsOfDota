@@ -4447,7 +4447,7 @@ function Pregame:hookBotStuff()
                 end
 
                 -- If we failed to find any skills to skill
-                if lowestAb == nil then
+                --[[if lowestAb == nil then
                     -- Try to skill attribute bonus
                     lowestAb = hero:FindAbilityByName('attribute_bonus')
                     if lowestAb ~= nil then
@@ -4456,7 +4456,7 @@ function Pregame:hookBotStuff()
                             lowestAb = nil
                         end
                     end
-                end
+                end]]
 
                 -- Apply the point
                 if lowestAb ~= nil then
