@@ -399,7 +399,7 @@
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
-        "AbilityTextureName"            "zuus_thundergods_wrath"
+        "AbilityTextureName"            "zuus_ult_lod"
 
         // Casting
         //-------------------------------------------------------------------------------------------------------------
@@ -641,7 +641,7 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityTextureName"            "legion_commander_duel"
+        "AbilityTextureName"            "duel_lod"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
@@ -698,7 +698,7 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityTextureName"            "juggernaut_omni_slash"
+        "AbilityTextureName"            "jug_ult_lod"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
@@ -765,7 +765,7 @@
     {
         // General
         //-------------------------------------------------------------------------------------------------------------
-        "AbilityTextureName"            "sven_gods_strength"
+        "AbilityTextureName"            "sven_ult_lod"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
 
@@ -1070,7 +1070,7 @@
         // General
         //-------------------------------------------------------------------------------------------------------------
         "BaseClass"                     "ability_datadriven"
-        "AbilityTextureName"            "crystal_maiden_brilliance_aura"
+        "AbilityTextureName"            "arcana_lod"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
@@ -2417,7 +2417,7 @@
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
-        "AbilityTextureName"            "earthshaker_aftershock"
+        "AbilityTextureName"            "aftershock_lod"
 
             // Precache
         //-------------------------------------------------------------------------------------------------------------

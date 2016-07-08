@@ -456,7 +456,7 @@ var allOptions = {
                     }
                 ]
             },
-            {
+            /*{
                 name: 'lodOptionAdvancedNeutralWraithNight',
                 des: 'lodOptionDesAdvancedWraithNight',
                 about: 'lodOptionAboutAdvancedWraithNight',
@@ -471,7 +471,7 @@ var allOptions = {
                         value: 1
                     }
                 ]
-            },
+            },*/
             {
                 name: 'lodOptionAdvancedCustomSkills',
                 des: 'lodOptionDesAdvancedCustomSkills',
@@ -2627,7 +2627,7 @@ function OnSkillTabShown(tabName) {
 
         activeTabs = {
             main: true,
-            wraith: true,
+            //wraith: true,
             //neutral: true,
             custom: true
         };
@@ -2867,7 +2867,7 @@ function OnSkillTabShown(tabName) {
         var tabList = [
             'main',
             'neutral',
-            'wraith',
+            //'wraith',
             'custom'
         ];
 
@@ -3947,7 +3947,8 @@ function OnOptionChanged(table_name, key, data) {
     }
 
     // Check for allowed categories changing
-    if(key == 'lodOptionAdvancedHeroAbilities' || key == 'lodOptionAdvancedNeutralAbilities' || key == 'lodOptionAdvancedNeutralWraithNight' || key == 'lodOptionAdvancedOPAbilities') {
+    //if(key == 'lodOptionAdvancedHeroAbilities' || key == 'lodOptionAdvancedNeutralAbilities' || key == 'lodOptionAdvancedNeutralWraithNight' || key == 'lodOptionAdvancedOPAbilities') {
+    if(key == 'lodOptionAdvancedHeroAbilities' || key == 'lodOptionAdvancedNeutralAbilities' || key == 'lodOptionAdvancedOPAbilities') {
         onAllowedCategoriesChanged();
     }
 
@@ -4153,9 +4154,9 @@ function onAllowedCategoriesChanged() {
         allowedCategories['neutral'] = true;
     }
 
-    if(optionValueList['lodOptionAdvancedNeutralWraithNight'] == 1) {
-        allowedCategories['wraith'] = true;
-    }
+    //if(optionValueList['lodOptionAdvancedNeutralWraithNight'] == 1) {
+    //    allowedCategories['wraith'] = true;
+    //}
 
     if(optionValueList['lodOptionAdvancedCustomSkills'] == 1) {
         allowedCategories['custom'] = true;
