@@ -79,6 +79,11 @@ Legends of Dota
  - If you would like to upload an alternate version of Legends of Dota, please seek approval by creating an issue in the issues section. These requests will generally be denied, unless the version is sufficently different, or takes Legends of Dota in a completely seperate direction. Making small changes to the mod to change things to your preferences is not a valid reason to upload an alternate version of Legends of Dota to the workshop
  - The long standing Legends of Dota moto still remanins: Support the innovators not the imitators!
 
+###How do I access the new MixIns feature?###
+ - The new MixIns feature is a private Legends of Dota feature that is only avaiable on the Steam workshop version of Legends of Dota
+ - This feature requires a very special setup in order to use it
+ - The source code for the MixIns feature may be released in the future, however, it will remain private for the time being
+
 ###Translation Credits###
  - [Chinese by ethereal](http://steamcommunity.com/profiles/76561198124343304/)
 
