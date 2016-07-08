@@ -13,6 +13,15 @@ local currentSkillList = {}
 local mainAbList = LoadKeyValues('scripts/npc/npc_abilities.txt')
 local customAbList = LoadKeyValues('scripts/npc/npc_abilities_custom.txt')
 
+-- Deal with overrides
+for abilityName,customData in pairs(LoadKeyValues('scripts/npc/npc_abilities_override.txt')) do
+    if mainAbList[abilityName] then
+        for flag, newValue in pairs(customData) do
+            mainAbList[abilityName][flag] = newValue
+        end
+    end
+end
+
 -- Calculate attributes on skills (channelled, etc, for multicast)
 util:SetupSpellProperties(mainAbList)
 
