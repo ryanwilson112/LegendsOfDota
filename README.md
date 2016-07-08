@@ -81,7 +81,7 @@ Legends of Dota
 
 ###How do I access the new MixIns feature?###
  - The new MixIns feature is a private Legends of Dota feature that is only avaiable on the Steam workshop version of Legends of Dota
- - This feature requires a very special setup in order to use it
+ - This feature requires a very special setup in order to compile it
  - The source code for the MixIns feature may be released in the future, however, it will remain private for the time being
 
 ###Translation Credits###
