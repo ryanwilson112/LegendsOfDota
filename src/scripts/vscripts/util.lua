@@ -392,6 +392,7 @@ end
 (function()
     toIgnore = {
         nyx_assassin_burrow = true,
+        nyx_assassin_unburrow = true,
         spectre_reality = true,
         techies_focused_detonate = true,
         furion_teleportation = true,
