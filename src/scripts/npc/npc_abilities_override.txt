@@ -110,5 +110,9 @@
 	"tusk_walrus_kick"
 	{
 		"AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
+		"MaxLevel"						"3"
+		"RequiredLevel"					"1"
+		"LevelsBetweenUpgrades"			"2"
+		"AbilityCooldown"				"24 16 8"
 	}
 }
