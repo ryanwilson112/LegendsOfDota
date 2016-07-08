@@ -2,5 +2,5 @@
 :: There are currently no public extensions at this time
 
 :: Change into the directory and run the compiler
-cd import/LegendsOfDotaExtender/
+cd import\LegendsOfDotaExtender\
 compile_extensions.bat
