@@ -41,7 +41,19 @@ end
 
 -- Networks flag info
 function Network:setFlagData(abilityName, flagData)
-    CustomNetTables:SetTableValue('flags', abilityName, flagData)
+    CustomNetTables:SetTableValue('flags', abilityName, {
+        isFlagData = true,
+        flagData = flagData
+    })
+end
+
+-- Networks custom groups
+function Network:sendCustomGroup(groupName, data)
+    CustomNetTables:SetTableValue('flags', 'custom_group_'..groupName, {
+        isCustomGroup = true,
+        groupName = groupName,
+        data = data
+    })
 end
 
 -- Sets a player's selected hero

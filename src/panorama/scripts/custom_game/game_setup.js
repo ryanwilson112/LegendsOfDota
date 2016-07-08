@@ -925,6 +925,7 @@ var PHASE_INGAME = 9;           // Game has started
 // Hero data
 var heroData = {};
 var abilityHeroOwner = {};
+var abilityCustomGroups = {};
 
 // Ability Data
 var flagData = {}
@@ -1198,16 +1199,28 @@ function OnHeroDataChanged(table_name, key, data) {
 
 // Flag data has changed
 function OnFlagDataChanged(table_name, key, data) {
-    flagDataInverse[key] = data;
+    // Flag data
+    if(data.isFlagData) {
+        flagDataInverse[key] = data.flagData;
 
-    // Do the schedule
-    if(dataHooks.OnFlagDataChanged == null) dataHooks.OnFlagDataChanged = 0;
-    var myHookNumber = ++dataHooks.OnFlagDataChanged;
-    $.Schedule(1, function() {
-        if(dataHooks.OnFlagDataChanged == myHookNumber) {
-            buildFlagList();
+        // Do the schedule
+        if(dataHooks.OnFlagDataChanged == null) dataHooks.OnFlagDataChanged = 0;
+        var myHookNumber = ++dataHooks.OnFlagDataChanged;
+        $.Schedule(1, function() {
+            if(dataHooks.OnFlagDataChanged == myHookNumber) {
+                buildFlagList();
+            }
+        });
+        return;
+    }
+
+    // Custom group data
+    if(data.isCustomGroup) {
+        for(var abilityName in data.data) {
+            abilityCustomGroups[abilityName] = data.groupName;
         }
-    });
+        return;
+    }
 }
 
 // Selected heroes has changed
@@ -2665,7 +2678,7 @@ function OnSkillTabShown(tabName) {
 
                     if(filterInfo.shouldShow) {
                         if(useSmartGrouping) {
-                            var theOwner = abilityHeroOwner[abilityName];
+                            var theOwner = abilityHeroOwner[abilityName] || abilityCustomGroups[abilityName];
 
                             if(theOwner != null) {
                                 // Group it
@@ -2684,7 +2697,7 @@ function OnSkillTabShown(tabName) {
                                 } else {
                                     ++heroBlockCounts[theOwner];
 
-                                    if(heroBlockCounts[theOwner] == 3) {
+                                    if(heroBlockCounts[theOwner] == 2) {
                                         groupCon.SetHasClass('manySkills', true);
                                     }
                                 }

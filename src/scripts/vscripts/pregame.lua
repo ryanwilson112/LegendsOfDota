@@ -798,6 +798,11 @@ function Pregame:networkHeroes()
         network:setFlagData(abilityName, flagData)
     end
 
+    -- Network custom groups
+    for groupName, data in pairs(oldAbList.customGroups) do
+        network:sendCustomGroup(groupName, data)
+    end
+
     self.invisSkills = flags.invis
 
     -- Store the inverse flags list
