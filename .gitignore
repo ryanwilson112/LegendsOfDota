@@ -224,3 +224,6 @@ lod_game/resource/flash3/images/workshop/
 
 # Ignore imported projects
 import
+
+# Ignore stat collection stuff
+src/scripts/vscripts/statcollection/settings.kv

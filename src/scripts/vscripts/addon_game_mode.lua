@@ -1,16 +1,7 @@
--- Define skill warnings
---[[skillWarnings = {
-    life_stealer_infest = {getSpellIcon('life_stealer_infest'), tranAbility('life_stealer_infest'), getSpellIcon('life_stealer_consume'), tranAbility('life_stealer_consume')},
-    shadow_demon_demonic_purge = {getSpellIcon('shadow_demon_demonic_purge'), tranAbility('shadow_demon_demonic_purge'), transHero('shadow_demon')},
-    phantom_lancer_phantom_edge = {getSpellIcon('phantom_lancer_phantom_edge'), tranAbility('phantom_lancer_phantom_edge'), getSpellIcon('phantom_lancer_juxtapose'), tranAbility('phantom_lancer_juxtapose')},
-    keeper_of_the_light_spirit_form = {getSpellIcon('keeper_of_the_light_spirit_form'), tranAbility('keeper_of_the_light_spirit_form')},
-    luna_eclipse = {getSpellIcon('luna_eclipse'), tranAbility('luna_eclipse'), getSpellIcon('luna_lucent_beam'), tranAbility('luna_lucent_beam')},
-    puck_illusory_orb = {getSpellIcon('puck_illusory_orb'), tranAbility('puck_illusory_orb'), getSpellIcon('puck_ethereal_jaunt'), tranAbility('puck_ethereal_jaunt')},
-    techies_remote_mines = {getSpellIcon('techies_remote_mines'), tranAbility('techies_remote_mines'), getSpellIcon('techies_focused_detonate'), tranAbility('techies_focused_detonate')},
-    nyx_assassin_burrow = {getSpellIcon('nyx_assassin_burrow'), tranAbility('nyx_assassin_burrow'), getSpellIcon('nyx_assassin_vendetta'), tranAbility('nyx_assassin_vendetta')},
-    lone_druid_true_form = {getSpellIcon('lone_druid_true_form'), tranAbility('lone_druid_true_form')},
-    phoenix_supernova = {getSpellIcon('phoenix_supernova'), tranAbility('phoenix_supernova')},
-}]]
+-- Store the modID so we can tell people not to commit it to the workshop with the LoD modID
+pcall(function()
+    _G.statcollectionModID = LoadKeyValues('scripts/vscripts/statcollection/settings.kv').modID
+end)
 
 -- Precaching
 function Precache(context)
@@ -50,7 +41,12 @@ function Activate()
     GameRules.pregame = pregame
     GameRules.ingame = ingame
 
-    print('LoD seems to have activated successfully!!\n\n')
+    -- Check modID against LoD modID
+    if _G.statcollectionModID == ('2374'..'504c'..'2c51'..'8faf'..'c973'..'1a12'..'0e67'..'fdf5') then
+        print('Please do not use the Legends of Dota modID! Please modify your `src/scripts/vscripts/statcollection/settings.kv` file to use a seperate modID!')
+    else
+        print('LoD seems to have activated successfully!!\n\n')
+    end
 end
 
 -- Boot directly into LoD interface
