@@ -1,8 +1,3 @@
--- Store the modID so we can tell people not to commit it to the workshop with the LoD modID
-pcall(function()
-    _G.statcollectionModID = LoadKeyValues('scripts/vscripts/statcollection/settings.kv').modID
-end)
-
 -- Precaching
 function Precache(context)
 end
@@ -41,12 +36,17 @@ function Activate()
     GameRules.pregame = pregame
     GameRules.ingame = ingame
 
-    -- Check modID against LoD modID
-    if _G.statcollectionModID == ('2374'..'504c'..'2c51'..'8faf'..'c973'..'1a12'..'0e67'..'fdf5') then
-        print('Please do not use the Legends of Dota modID! Please modify your `src/scripts/vscripts/statcollection/settings.kv` file to use a seperate modID!')
-    else
-        print('LoD seems to have activated successfully!!\n\n')
-    end
+    -- Store the modID so we can tell people not to commit it to the workshop with the LoD modID
+    pcall(function()
+        -- If this fails, the KV doesn't exist, and a stats loading error will be printed :)
+
+        -- Compare modID to LoD modID
+        if LoadKeyValues('scripts/vscripts/statcollection/settings.kv').modID == ('2374'..'504c'..'2c51'..'8faf'..'c973'..'1a12'..'0e67'..'fdf5') then
+            print('Please do not use the Legends of Dota modID! Please modify your `src/scripts/vscripts/statcollection/settings.kv` file to use a seperate modID!')
+        else
+            print('LoD seems to have activated successfully!!\n\n')
+        end
+    end)
 end
 
 -- Boot directly into LoD interface
