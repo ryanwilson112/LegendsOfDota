@@ -1020,18 +1020,14 @@
     horizontal-align: center;
 }
 
+.hide_picks #reviewPhasePlayerAvatarBig {
+    visibility: visible;
+}
+
 .tooManyPlayers #reviewPhasePlayerAvatarBig {
     margin-left: 96px;
     width: 64px;
     height: 64px;
-}
-
-#reviewRadiantTeam #reviewPhasePlayerAvatarBig {
-    margin-top: 104px;
-}
-
-.hide_picks #reviewPhasePlayerAvatarBig {
-    visibility: visible;
 }
 
 /*
