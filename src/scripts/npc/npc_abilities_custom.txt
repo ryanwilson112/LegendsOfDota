@@ -148,7 +148,7 @@
         "BaseClass"                     "ability_datadriven"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
         "MaxLevel"                      "3"
-        "AbilityTextureName"            "ogre_magi_multicast"
+        "AbilityTextureName"            "multicast_lod"
         "AbilityType"                   "DOTA_ABILITY_TYPE_ULTIMATE"
         "AbilityCooldown"               "30 15 10"
 
@@ -1284,7 +1284,7 @@
         //-------------------------------------------------------------------------------------------------------------
         "BaseClass"             "ability_datadriven"
         "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
-        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+        "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
         "FightRecapLevel"               "1"
         "AbilityTextureName"            "mirana_starfall"
@@ -1297,12 +1297,12 @@
             "particle"          "particles/units/heroes/hero_mirana/mirana_starfall_attack.vpcf"
             "particle"          "particles/units/heroes/hero_mirana/mirana_starfall_circle.vpcf"
         }
-        
+
         // Casting
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCastPoint"              "0.5 0.5 0.5 0.5"
 
-        // Time     
+        // Time
         //-------------------------------------------------------------------------------------------------------------
         "AbilityCooldown"               "12.0 12.0 12.0 12.0"
         "AbilityDuration"               "10.0 10.0 10.0 10.0"
@@ -1326,7 +1326,7 @@
             "01"
             {
                 "var_type"          "FIELD_INTEGER"
-                "starfall_radius"   "625"       
+                "starfall_radius"   "625"
             }
             "02"
             {
@@ -1376,7 +1376,7 @@
                 {
                     "Center" "CASTER"
                     "Radius" "%starfall_radius"
-                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY" 
+                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
                     "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
                 }
 
@@ -1420,7 +1420,7 @@
                 {
                     "Center" "CASTER"
                     "Radius" "%starfall_secondary_radius"
-                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY" 
+                    "Teams" "DOTA_UNIT_TARGET_TEAM_ENEMY"
                     "Types" "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
                     "MaxTargets"    "%starfall_secondary_targets"
                     "Random"        "1"
@@ -1492,7 +1492,7 @@
                 "Passive"            "1"
                 "IsHidden"            "1"
                 "IsDebuff"            "0"
-        
+
                 "ThinkInterval"  "1.0"
                 "OnIntervalThink"
                 {
@@ -2649,7 +2649,7 @@
                     "MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"     "%int_gain"
                 }
             }
-            
+
             "modifier_slark_essence_shift_intellect_datadriven_debuff_counter"  //A visible counter that will appear in Slark's target's modifier bar.
             {
                 "Duration"          "%duration"
@@ -2667,7 +2667,7 @@
                 }
 
             }
-            
+
             "modifier_slark_essence_shift_intellect_datadriven_buff"
             {
                 "Duration"              "%duration"
@@ -2702,8 +2702,8 @@
                 }
             }
         }
-    }    
-    //================================================================================================================= 
+    }
+    //=================================================================================================================
     // Riki: Backstab
     //=================================================================================================================
     "riki_backstab_lod"
@@ -2715,7 +2715,7 @@
         "AbilityUnitDamageType"         "DAMAGE_TYPE_PHYSICAL"
         "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_YES"
         "AbilityTextureName"            "riki_backstab_lod"
-        
+
         // Precache
         //-------------------------------------------------------------------------------------------------------------
         "precache"
@@ -2724,7 +2724,7 @@
           "soundfile"   "sounds/weapons/hero/riki/riki_attack1.vsnd"
           "particle"    "particles/units/heroes/hero_riki/riki_backstab.vpcf"
          }
-        
+
         // Special
         //-------------------------------------------------------------------------------------------------------------
         "AbilitySpecial"
