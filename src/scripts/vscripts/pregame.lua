@@ -1256,6 +1256,11 @@ function Pregame:loadTrollCombos()
             end
         end
     end
+
+    -- Ban everything in the always ban list
+    for skillName,_ in pairs(tempBanList.alwaysBan) do
+        self:banAbility(skillName)
+    end
 end
 
 -- Tests a build to decide if it is a troll combo
